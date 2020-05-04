@@ -1,0 +1,10 @@
+.card-overview {
+  width: 65%;
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+
+
+}

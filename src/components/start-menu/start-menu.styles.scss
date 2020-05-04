@@ -1,0 +1,54 @@
+.start-menu {
+  display: flex;
+  flex-flow: column;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  background: #202040;
+  height: 350px;
+  width: 280px;
+  font-size: 22px;
+
+  align-items: center;
+
+  h4 {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .start-button {
+    padding: 7.5px 0;
+    cursor: pointer;
+    margin: 20px 0;
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+    background: #393974;
+    &:hover {
+      transition: 0.3s;
+      background: #5757b1;
+    }
+  }
+
+  .arrow-button {
+    padding: 5px 0;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    transition: 0.3s;
+    background: #393974;
+    &:hover {
+      transition: 0.3s;
+      background: #5757b1;
+    }
+    .content {
+      cursor: default;
+    }
+    .icon {
+      cursor: pointer;
+      margin: 5px 10px;
+    }
+
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+}
