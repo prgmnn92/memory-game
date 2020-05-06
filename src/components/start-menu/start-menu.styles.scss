@@ -39,8 +39,16 @@
     transition: 0.3s;
     background: #393974;
     &:hover {
-      transition: 0.3s;
-      background: #5757b1;
+      @media (max-width: 576px) {
+        &:active {
+          transition: 0.3s;
+          background: #5757b1;
+        }
+      }
+      @media (min-width: 576px) {
+        transition: 0.3s;
+        background: #5757b1;
+      }
     }
     .content {
       cursor: default;
