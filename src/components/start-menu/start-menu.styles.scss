@@ -8,6 +8,7 @@
   height: 350px;
   width: 280px;
   font-size: 22px;
+  box-shadow: 0px 4px 10px #2f2f2f;
 
   align-items: center;
 
@@ -31,6 +32,7 @@
 
   .arrow-button {
     padding: 5px 0;
+
     display: flex;
     flex-flow: row;
     width: 100%;
@@ -42,6 +44,9 @@
     }
     .content {
       cursor: default;
+      @media (max-width: 576px) {
+        margin-top: 3.5px;
+      }
     }
     .icon {
       cursor: pointer;

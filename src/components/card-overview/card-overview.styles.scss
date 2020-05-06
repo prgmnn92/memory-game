@@ -3,8 +3,12 @@
   height: 85%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   grid-gap: 20px;
-
-
+  @media (max-width: 576px) {
+    width: 80%;
+    height: 85%;
+    display: grid;
+    grid-gap: 3px;
+  }
 }

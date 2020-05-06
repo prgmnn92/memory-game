@@ -1,48 +1,42 @@
 .card {
-
   background: #393974;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
-  transition: transform .5s;
-
+  transition: transform 0.5s;
 
   .front-face {
-    width: 30%;
+    width: 25%;
+    @media (max-width: 576px) {
+      width: 55%;
+    }
   }
   .back-face {
-    width: 30%;
-    
-    
+    width: 25%;
+    @media (max-width: 576px) {
+      width: 55%;
+    }
   }
 }
 
-
-
-
 .card {
-
   margin: 5px;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
-  transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   &.flip {
     transform: rotateY(180deg);
   }
-
-
 }
 
 .card:active {
   transform: scale(0.97);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-
-
 
 .front-face,
 .back-face {
